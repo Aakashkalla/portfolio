@@ -1,20 +1,39 @@
+"use client";
+
 import { DATA } from "@/lib/data";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function Hero() {
   return (
     <header className="flex flex-col gap-6">
-      <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-        Hi, I'm {DATA.name} - <span className="text-gray-400">{DATA.role}</span>
-      </h1>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+          Hi, I'm {DATA.name} - <span className="text-gray-400">{DATA.role}</span>
+        </h1>
+      </motion.div>
       
-      <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-        {DATA.bio}
-      </p>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+          {DATA.bio}
+        </p>
+      </motion.div>
 
       {/* Tech Stack Badges */}
-      <div className="flex flex-wrap gap-2">
+      <motion.div 
+        className="flex flex-wrap gap-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         {DATA.skills.map((skill) => (
           <span 
             key={skill} 
@@ -23,9 +42,14 @@ export function Hero() {
             {skill}
           </span>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="flex gap-4 pt-2">
+      <motion.div 
+        className="flex gap-4 pt-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
         <Link 
           href="/resume.pdf"
           className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-foreground text-background h-10 px-4 hover:bg-white/90 transition-colors"
@@ -38,16 +62,21 @@ export function Hero() {
         >
           Get in touch
         </Link>
-      </div>
+      </motion.div>
 
       {/* Social Icons */}
-      <div className="flex gap-4 text-muted-foreground">
+      <motion.div 
+        className="flex gap-4 text-muted-foreground"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         {DATA.links.map((social, idx) => (
           <Link key={idx} href={social.href} target="_blank" className="hover:text-foreground transition-colors">
             <social.icon size={20} />
           </Link>
         ))}
-      </div>
+      </motion.div>
     </header>
   );
 }

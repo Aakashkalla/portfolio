@@ -16,12 +16,20 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "RoomFinder",
-      description: "A full stack rental room platform allowing users to find rooms and property owners to list and manage room listing.",
-      tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase"],
-      link: "https://room-finder-one.vercel.app/landing",
-      image:"/projects/Room-Finder.png",
-      status: "All Systems Operational"
+      title : "n0track",
+      description : "Real-time anonymous chat app with room codes, live presence, and instant messaging. Deployed with a Render backend and Vercel frontend for fast global access.",
+      tech : ["React", "TypeScript", "Vite", "TailwindCSS", "Socket.IO", "Express", "Node.js"],
+      link : "https://n0tracker.vercel.app",
+      image : "/projects/NoTracker.png",
+      status : "All Systems Operational"
+    },
+    {
+      title : "Smart Contract System",
+      description : "Smart Complaint System is a full-stack platform that allows users to report civic issues, automatically categorizes them using AI, and enables real-time tracking and resolution through an admin dashboard.",
+      tech : ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Prisma", "PostgreSQL"],
+      link : "https://smart-complaint-system-indol.vercel.app",
+      image :"/projects/SmartContract.png",
+      status : "All systems Operational"
     },
     {
       title: "Worklog",
@@ -38,6 +46,14 @@ export const DATA = {
         link:"https://expense-tracker-seven-sepia-94.vercel.app/",
         image:"/projects/Budget-Guardian.png",
         status:"All Systems Operational"
+    },
+    {
+      title: "RoomFinder",
+      description: "A full stack rental room platform allowing users to find rooms and property owners to list and manage room listing.",
+      tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase"],
+      link: "https://room-finder-one.vercel.app/landing",
+      image:"/projects/Room-Finder.png",
+      status: "Down"
     }
   ]
 };
