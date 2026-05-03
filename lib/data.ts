@@ -24,7 +24,7 @@ export const DATA = {
       status : "All Systems Operational"
     },
     {
-      title : "Smart Contract System",
+      title : "Smart Complaint System",
       description : "Smart Complaint System is a full-stack platform that allows users to report civic issues, automatically categorizes them using AI, and enables real-time tracking and resolution through an admin dashboard.",
       tech : ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Prisma", "PostgreSQL"],
       link : "https://smart-complaint-system-indol.vercel.app",
