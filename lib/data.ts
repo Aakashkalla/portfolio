@@ -4,7 +4,7 @@ import { title } from "process";
 export const DATA = {
   name: "Aakash",
   role: "A Full Stack web developer.",
-  bio: "I build interactive web applications using TypeScript, React, and Next.js. Currently focused on strengthening UI design and building real-world full-stack projects.",
+  bio: "I build and ship full-stack web products using Next.js, TypeScript, and Supabase — from auth systems and real-time features to AI integrations. Available for full-time roles immediately.",
   links: [
     { icon: Github, href: "https://github.com/Aakashkalla" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/aakash-kalla/" },
