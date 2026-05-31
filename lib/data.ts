@@ -53,7 +53,7 @@ export const DATA = {
       tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase"],
       link: "https://room-finder-one.vercel.app/landing",
       image:"/projects/Room-Finder.png",
-      status: "Down"
+      status: "All Systems Operational"
     }
   ]
 };

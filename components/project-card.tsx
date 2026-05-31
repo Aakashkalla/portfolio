@@ -37,7 +37,7 @@ export function ProjectCard({ project }: ProjectProps) {
           />
         </div>
         
-        <div className="p-5 flex flex-col gap-4 flex-grow">
+        <div className="p-5 flex flex-col gap-4 grow">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-xl tracking-tight text-foreground">
               {project.title}
